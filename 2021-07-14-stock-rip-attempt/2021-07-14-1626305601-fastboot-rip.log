@@ -1,0 +1,332 @@
+Script started on 2021-07-14 16:33:21-07:00 [TERM="screen-256color" TTY="/dev/pts/1" COLUMNS="134" LINES="25"]
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# adb --version
+[?2004lAndroid Debug Bridge version 1.0.41
+Version 31.0.2-7242960
+Installed as /home/daboross/.local/opt/platform-tools/adb
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# echo "reboogin[K[K[Kting to fastboot"
+[?2004lrebooting to fastboot
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# echo S[K"Status: DEVICE [K[K[K[K[K[K[KPRODUCT_NAME - holi VARIANT - SMU[K_ UFS BOOTLOADER VERSION - [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?2004h> PRODUCT_NAME - holi
+[?2004l[?2004h> VARIANT - SM_ UFS
+[?2004l[?2004h> BOOTLOADER VERSION -
+[?2004l[?2004h> BASEBAND VERSION - [K
+[?2004l[?2004h> SERIAL NUMBER - SERIAL_NUMBER_REDACTED
+[?2004l[?2004h> SECURE BOOT - yes
+[?2004l[?2004h> DEVICE STATE - locked
+[?2004l[?2004h> [?2004l
+bash: unexpected EOF while looking for matching `"'
+bash: syntax error: unexpected end of file
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# echo "Status:
+PRODUCT_NAME - holi
+VARIANT - SM_ UFS
+BOOTLOADER VERSION -
+BASEBAND VERSION -
+SERIAL NUMBER - SERIAL_NUMBER_REDACTED
+SECURE BOOT - yes
+DEVICE STATE - locked
+"
+[?2004lStatus:
+PRODUCT_NAME - holi
+VARIANT - SM_ UFS
+BOOTLOADER VERSION -
+BASEBAND VERSION -
+SERIAL NUMBER - SERIAL_NUMBER_REDACTED
+SECURE BOOT - yes
+DEVICE STATE - locked
+
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# f[Kadb devices
+[?2004lList of devices attached
+
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot devices
+[?2004lSERIAL_NUMBER_REDACTED	fastboot
+
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot devices[K[K[K[K[K[K[Khelp
+[?2004lusage: fastboot [OPTION...] COMMAND...
+
+flashing:
+ update ZIP                 Flash all partitions from an update.zip package.
+ flashall                   Flash all partitions from $ANDROID_PRODUCT_OUT.
+                            On A/B devices, flashed slot is set as active.
+                            Secondary images may be flashed to inactive slot.
+ flash PARTITION [FILENAME] Flash given partition, using the image from
+                            $ANDROID_PRODUCT_OUT if no filename is given.
+
+basics:
+ devices [-l]               List devices in bootloader (-l: with device paths).
+ getvar NAME                Display given bootloader variable.
+ reboot [bootloader]        Reboot device.
+
+locking/unlocking:
+ flashing lock|unlock       Lock/unlock partitions for flashing
+ flashing lock_critical|unlock_critical
+                            Lock/unlock 'critical' bootloader partitions.
+ flashing get_unlock_ability
+                            Check whether unlocking is allowed (1) or not(0).
+
+advanced:
+ erase PARTITION            Erase a flash partition.
+ format[:FS_TYPE[:SIZE]] PARTITION
+                            Format a flash partition.
+ set_active SLOT            Set the active slot.
+ oem [COMMAND...]           Execute OEM-specific command.
+ gsi wipe|disable           Wipe or disable a GSI installation (fastbootd only).
+ wipe-super [SUPER_EMPTY]   Wipe the super partition. This will reset it to
+                            contain an empty set of default dynamic partitions.
+ snapshot-update cancel     On devices that support snapshot-based updates, cancel
+                            an in-progress update. This may make the device
+                            unbootable until it is reflashed.
+ snapshot-update merge      On devices that support snapshot-based updates, finish
+                            an in-progress update if it is in the "merging"
+                            phase.
+ fetch PARTITION            Fetch a partition image from the device.
+boot image:
+ boot KERNEL [RAMDISK [SECOND]]
+                            Download and boot kernel from RAM.
+ flash:raw PARTITION KERNEL [RAMDISK [SECOND]]
+                            Create boot image and flash it.
+ --dtb DTB                  Specify path to DTB for boot image header version 2.
+ --cmdline CMDLINE          Override kernel command line.
+ --base ADDRESS             Set kernel base address (default: 0x10000000).
+ --kernel-offset            Set kernel offset (default: 0x00008000).
+ --ramdisk-offset           Set ramdisk offset (default: 0x01000000).
+ --tags-offset              Set tags offset (default: 0x00000100).
+ --dtb-offset               Set dtb offset (default: 0x01100000).
+ --page-size BYTES          Set flash page size (default: 2048).
+ --header-version VERSION   Set boot image header version.
+ --os-version MAJOR[.MINOR[.PATCH]]
+                            Set boot image OS version (default: 0.0.0).
+ --os-patch-level YYYY-MM-DD
+                            Set boot image OS security patch level.
+
+Android Things:
+ stage IN_FILE              Sends given file to stage for the next command.
+ get_staged OUT_FILE        Writes data staged by the last command to a file.
+
+options:
+ -w                         Wipe userdata.
+ -s SERIAL                  Specify a USB device.
+ -s tcp|udp:HOST[:PORT]     Specify a network device.
+ -S SIZE[K|M|G]             Break into sparse files no larger than SIZE.
+ --force                    Force a flash operation that may be unsafe.
+ --slot SLOT                Use SLOT; 'all' for both slots, 'other' for
+                            non-current slot (default: current active slot).
+ --set-active[=SLOT]        Sets the active slot before rebooting.
+ --skip-secondary           Don't flash secondary slots in flashall/update.
+ --skip-reboot              Don't reboot device after flashing.
+ --disable-verity           Sets disable-verity when flashing vbmeta.
+ --disable-verification     Sets disable-verification when flashing vbmeta.
+ --fs-options=OPTION[,OPTION]
+                            Enable filesystem features. OPTION supports casefold, projid, compress
+ --wipe-and-use-fbe         Enable file-based encryption, wiping userdata.
+ --unbuffered               Don't buffer input or output.
+ --verbose, -v              Verbose output.
+ --version                  Display version.
+ --help, -h                 Show this message.
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot help[K[K[K[Kfetch 
+[?2004lfastboot: usage: expected argument
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot fetch boot
+[?2004lfastboot: usage: expected argument
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot fetch boot[K[K[K[K--help
+[?2004lusage: fastboot [OPTION...] COMMAND...
+
+flashing:
+ update ZIP                 Flash all partitions from an update.zip package.
+ flashall                   Flash all partitions from $ANDROID_PRODUCT_OUT.
+                            On A/B devices, flashed slot is set as active.
+                            Secondary images may be flashed to inactive slot.
+ flash PARTITION [FILENAME] Flash given partition, using the image from
+                            $ANDROID_PRODUCT_OUT if no filename is given.
+
+basics:
+ devices [-l]               List devices in bootloader (-l: with device paths).
+ getvar NAME                Display given bootloader variable.
+ reboot [bootloader]        Reboot device.
+
+locking/unlocking:
+ flashing lock|unlock       Lock/unlock partitions for flashing
+ flashing lock_critical|unlock_critical
+                            Lock/unlock 'critical' bootloader partitions.
+ flashing get_unlock_ability
+                            Check whether unlocking is allowed (1) or not(0).
+
+advanced:
+ erase PARTITION            Erase a flash partition.
+ format[:FS_TYPE[:SIZE]] PARTITION
+                            Format a flash partition.
+ set_active SLOT            Set the active slot.
+ oem [COMMAND...]           Execute OEM-specific command.
+ gsi wipe|disable           Wipe or disable a GSI installation (fastbootd only).
+ wipe-super [SUPER_EMPTY]   Wipe the super partition. This will reset it to
+                            contain an empty set of default dynamic partitions.
+ snapshot-update cancel     On devices that support snapshot-based updates, cancel
+                            an in-progress update. This may make the device
+                            unbootable until it is reflashed.
+ snapshot-update merge      On devices that support snapshot-based updates, finish
+                            an in-progress update if it is in the "merging"
+                            phase.
+ fetch PARTITION            Fetch a partition image from the device.
+boot image:
+ boot KERNEL [RAMDISK [SECOND]]
+                            Download and boot kernel from RAM.
+ flash:raw PARTITION KERNEL [RAMDISK [SECOND]]
+                            Create boot image and flash it.
+ --dtb DTB                  Specify path to DTB for boot image header version 2.
+ --cmdline CMDLINE          Override kernel command line.
+ --base ADDRESS             Set kernel base address (default: 0x10000000).
+ --kernel-offset            Set kernel offset (default: 0x00008000).
+ --ramdisk-offset           Set ramdisk offset (default: 0x01000000).
+ --tags-offset              Set tags offset (default: 0x00000100).
+ --dtb-offset               Set dtb offset (default: 0x01100000).
+ --page-size BYTES          Set flash page size (default: 2048).
+ --header-version VERSION   Set boot image header version.
+ --os-version MAJOR[.MINOR[.PATCH]]
+                            Set boot image OS version (default: 0.0.0).
+ --os-patch-level YYYY-MM-DD
+                            Set boot image OS security patch level.
+
+Android Things:
+ stage IN_FILE              Sends given file to stage for the next command.
+ get_staged OUT_FILE        Writes data staged by the last command to a file.
+
+options:
+ -w                         Wipe userdata.
+ -s SERIAL                  Specify a USB device.
+ -s tcp|udp:HOST[:PORT]     Specify a network device.
+ -S SIZE[K|M|G]             Break into sparse files no larger than SIZE.
+ --force                    Force a flash operation that may be unsafe.
+ --slot SLOT                Use SLOT; 'all' for both slots, 'other' for
+                            non-current slot (default: current active slot).
+ --set-active[=SLOT]        Sets the active slot before rebooting.
+ --skip-secondary           Don't flash secondary slots in flashall/update.
+ --skip-reboot              Don't reboot device after flashing.
+ --disable-verity           Sets disable-verity when flashing vbmeta.
+ --disable-verification     Sets disable-verification when flashing vbmeta.
+ --fs-options=OPTION[,OPTION]
+                            Enable filesystem features. OPTION supports casefold, projid, compress
+ --wipe-and-use-fbe         Enable file-based encryption, wiping userdata.
+ --unbuffered               Don't buffer input or output.
+ --verbose, -v              Verbose output.
+ --version                  Display version.
+ --help, -h                 Show this message.
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot oem unlock
+[?2004lFAILED (remote: 'Flashing Unlock is not allowed
+')
+fastboot: error: Command failed
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot fas[K[Klashing unlock
+[?2004lFAILED (remote: 'Flashing Unlock is not allowed
+')
+fastboot: error: Command failed
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot flashing unlock[K[K[K[K[K[Kget_unlock_ability
+[?2004l(bootloader) get_unlock_ability: 0
+OKAY [  0.001s]
+Finished. Total time: 0.001s
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot flashing get_unlock_ability[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Koem get_unlock_code
+[?2004lFAILED (remote: 'Unknow command')
+fastboot: error: Command failed
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot help
+[?2004lusage: fastboot [OPTION...] COMMAND...
+
+flashing:
+ update ZIP                 Flash all partitions from an update.zip package.
+ flashall                   Flash all partitions from $ANDROID_PRODUCT_OUT.
+                            On A/B devices, flashed slot is set as active.
+                            Secondary images may be flashed to inactive slot.
+ flash PARTITION [FILENAME] Flash given partition, using the image from
+                            $ANDROID_PRODUCT_OUT if no filename is given.
+
+basics:
+ devices [-l]               List devices in bootloader (-l: with device paths).
+ getvar NAME                Display given bootloader variable.
+ reboot [bootloader]        Reboot device.
+
+locking/unlocking:
+ flashing lock|unlock       Lock/unlock partitions for flashing
+ flashing lock_critical|unlock_critical
+                            Lock/unlock 'critical' bootloader partitions.
+ flashing get_unlock_ability
+                            Check whether unlocking is allowed (1) or not(0).
+
+advanced:
+ erase PARTITION            Erase a flash partition.
+ format[:FS_TYPE[:SIZE]] PARTITION
+                            Format a flash partition.
+ set_active SLOT            Set the active slot.
+ oem [COMMAND...]           Execute OEM-specific command.
+ gsi wipe|disable           Wipe or disable a GSI installation (fastbootd only).
+ wipe-super [SUPER_EMPTY]   Wipe the super partition. This will reset it to
+                            contain an empty set of default dynamic partitions.
+ snapshot-update cancel     On devices that support snapshot-based updates, cancel
+                            an in-progress update. This may make the device
+                            unbootable until it is reflashed.
+ snapshot-update merge      On devices that support snapshot-based updates, finish
+                            an in-progress update if it is in the "merging"
+                            phase.
+ fetch PARTITION            Fetch a partition image from the device.
+boot image:
+ boot KERNEL [RAMDISK [SECOND]]
+                            Download and boot kernel from RAM.
+ flash:raw PARTITION KERNEL [RAMDISK [SECOND]]
+                            Create boot image and flash it.
+ --dtb DTB                  Specify path to DTB for boot image header version 2.
+ --cmdline CMDLINE          Override kernel command line.
+ --base ADDRESS             Set kernel base address (default: 0x10000000).
+ --kernel-offset            Set kernel offset (default: 0x00008000).
+ --ramdisk-offset           Set ramdisk offset (default: 0x01000000).
+ --tags-offset              Set tags offset (default: 0x00000100).
+ --dtb-offset               Set dtb offset (default: 0x01100000).
+ --page-size BYTES          Set flash page size (default: 2048).
+ --header-version VERSION   Set boot image header version.
+ --os-version MAJOR[.MINOR[.PATCH]]
+                            Set boot image OS version (default: 0.0.0).
+ --os-patch-level YYYY-MM-DD
+                            Set boot image OS security patch level.
+
+Android Things:
+ stage IN_FILE              Sends given file to stage for the next command.
+ get_staged OUT_FILE        Writes data staged by the last command to a file.
+
+options:
+ -w                         Wipe userdata.
+ -s SERIAL                  Specify a USB device.
+ -s tcp|udp:HOST[:PORT]     Specify a network device.
+ -S SIZE[K|M|G]             Break into sparse files no larger than SIZE.
+ --force                    Force a flash operation that may be unsafe.
+ --slot SLOT                Use SLOT; 'all' for both slots, 'other' for
+                            non-current slot (default: current active slot).
+ --set-active[=SLOT]        Sets the active slot before rebooting.
+ --skip-secondary           Don't flash secondary slots in flashall/update.
+ --skip-reboot              Don't reboot device after flashing.
+ --disable-verity           Sets disable-verity when flashing vbmeta.
+ --disable-verification     Sets disable-verification when flashing vbmeta.
+ --fs-options=OPTION[,OPTION]
+                            Enable filesystem features. OPTION supports casefold, projid, compress
+ --wipe-and-use-fbe         Enable file-based encryption, wiping userdata.
+ --unbuffered               Don't buffer input or output.
+ --verbose, -v              Verbose output.
+ --version                  Display version.
+ --help, -h                 Show this message.
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot flashing unlok[Kck_critical
+[?2004lFAILED (remote: 'Flashing Unlock is not allowed
+')
+fastboot: error: Command failed
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot flashing unlock_critical[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfetch system
+[?2004lfastboot: usage: expected argument
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot fetch system[K[K[K[K[K[Ksystem asdf
+[?2004lfastboot: error: Unable to get max-fetch-size. Device does not support fetch command.
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot fetch system asdf[K[K[K[K[K[K[K[K[K[K[Kboot asdf
+[?2004lfastboot: error: Unable to get max-fetch-size. Device does not support fetch command.
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot fetch boot asdf[K[K[K[Kboot
+[?2004lfastboot: error: Unable to get max-fetch-size. Device does not support fetch command.
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot oem unlock
+[?2004lFAILED (remote: 'Flashing Unlock is not allowed
+')
+fastboot: error: Command failed
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# c[Kecho "Probably didn't allow OEM unlock and that's the problem"
+[?2004lProbably didn't allow OEM unlock and that's the problem
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# fastboot reboot
+[?2004lRebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.050s
+kroot@thinkfedora:/home/daboross/proj/Android/OnePlus-Nord-N200-5G-Stock-rip\[?2004h[root@thinkfedora OnePlus-Nord-N200-5G-Stock-rip]# [?2004l
+exit
+
+Script done on 2021-07-14 16:44:38-07:00 [COMMAND_EXIT_CODE="0"]

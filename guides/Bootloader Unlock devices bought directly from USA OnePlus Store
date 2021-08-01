@@ -1,0 +1,89 @@
+I saw the other thread on unlocking the T-Mobile variant, so I thought I'd document my experience unlocking the version bought directly from the OnePlus store.
+[HEADING=1]Warnings[/HEADING]
+This guide applies exclusively to OnePlus Nord N200 5G phones bought from the USA OnePlus online store.
+
+It may work for other carrier-unlocked Nord N200 5G phones. However, I haven't tested them.
+
+As always, this voids your warranty.
+
+[QUOTE]
+Your warranty is now void.
+
+I am not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed. Please do some research if you have any concerns about this process before following it. YOU are choosing to make these modifications, and if you point the finger at me for messing up your device, I will not help you.
+[/QUOTE]
+
+In addition, this adds an unremovable warning screen from the bootup process. After unlocking your device, the device will show a warning screen on every bootup for 5 seconds. It will read as follows:
+
+[QUOTE]
+The boot loader is unlocked and software integrity cannot be guaranteed. Any data stored on the device may be available to attackers. Do not store any sensitive data on the device.
+
+Visit this link on another device:
+g.co/ABH
+
+PRESS POWER KEY TO PAUSE BOOT
+[/QUOTE]
+
+As a last note, if successful, [B]this will wipe your device[/B]. Backup all data you care about.
+[HEADING=1]Prerequisites[/HEADING]
+1. A OnePlus Nord N200 5G bought from the USA OnePlus store, running OxygenOS 11.
+
+2. A computer with the `fastboot` android platform tool set up and working.
+
+You can download a package containing fastboot from [URL]https://developer.android.com/studio/releases/platform-tools[/URL].
+
+3. A usb-C cable to plug the phone into the computer.
+[HEADING=1]Steps[/HEADING]
+1. Enable developer settings.
+
+Go to Settings -> About phone. Tap "Build number" 5 times until it brings up a prompt to enter your device password. Enter it.
+
+On success, it will bring up a note saying "You are now a developer!"
+
+2. Enable OEM Unlocking
+
+Go to Settings -> System -> Developer Options. Tap "OEM Unlocking" and follow prompts.
+
+3. Reboot into fastboot
+
+Long-press the power button, then select "Restart". As the phone is restarting, hold down the volume down and volume up buttons.
+
+The phone should now be showing a text interface. You can select different options with the volume buttons, and use the power button to select.
+
+3. Unlock using fastboot
+
+Connect the phone to the computer.
+
+In a command prompt on the computer, use the following fastboot command:
+
+[CODE=bash]fastboot devices[/CODE]
+
+Verify that your device is connected, and the serial code matches the "SERIAL NUMBER" shown on the screen of the phone. For instance, my device shows as:
+
+[CODE=text]$ fastboot devices
+SERIAL_NUMBER_REDACTED    fastboot[/CODE]
+
+And on my phone screen, it shows "SERIAL NUMBER - SERIAL_NUMBER_REDACTED".
+
+Once you've verified this, use the following command to unlock the device:
+
+[B]Reminder: THIS COMMAND WIPES YOUR DATA. All data on the phone will be erased by this.[/B]
+
+[CODE=bash]fastboot oem unlock[/CODE]
+
+If successful, the computer will output this:
+
+[CODE=text]$ fastboot oem unlock
+OKAY [  0.042s]
+Finished. Total time: 0.042s[/CODE]
+
+On the phone, you will see a prompt for unlocking the device. Read it, and follow the instructions. Use the volume up/down buttons as up/down arrow keys, and the power button as "OK" or "Enter".
+
+After you've confirmed you want to unlock the device, your phone will reboot several times, and erase all data. Once it's done, you'll be rebooted into the operating system.
+
+4. Confirm the unlock worked
+
+To confirm the unlock worked, reboot into fastboot mode again.
+
+On the screen, the bottom row should now read "DEVICE STATE - unlocked".
+
+Congrats! You've unlocked your device. Once someone builds a custom recovery or ROM, you'll be able to use fastboot to flash it to your device.

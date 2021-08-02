@@ -1,0 +1,209 @@
+OnePlusN200:/ $ ls -l /dev/block/bootdevice/by-name/
+total 0
+/dev/block/bootdevice/by-name/ALIGN_TO_128K_1 -> /dev/block/sdd1
+/dev/block/bootdevice/by-name/ALIGN_TO_128K_2 -> /dev/block/sdf1
+/dev/block/bootdevice/by-name/abl_a -> /dev/block/sde6
+/dev/block/bootdevice/by-name/abl_b -> /dev/block/sde26
+/dev/block/bootdevice/by-name/abl_log -> /dev/block/sde53
+/dev/block/bootdevice/by-name/android_log -> /dev/block/sde55
+/dev/block/bootdevice/by-name/apdp -> /dev/block/sde40
+/dev/block/bootdevice/by-name/bluetooth_a -> /dev/block/sde5/dev/block/bootdevice/by-name/
+/dev/block/bootdevice/by-name/bluetooth_b -> /dev/block/sde25
+/dev/block/bootdevice/by-name/boot_a -> /dev/block/sde9
+/dev/block/bootdevice/by-name/boot_b -> /dev/block/sde29
+/dev/block/bootdevice/by-name/carrier -> /dev/block/sda8
+/dev/block/bootdevice/by-name/catecontentfv -> /dev/block/sde50
+/dev/block/bootdevice/by-name/catefv -> /dev/block/sde49
+/dev/block/bootdevice/by-name/cateloader -> /dev/block/sde42
+/dev/block/bootdevice/by-name/cdt -> /dev/block/sdd2
+/dev/block/bootdevice/by-name/core_nhlos_a -> /dev/block/sde15
+/dev/block/bootdevice/by-name/core_nhlos_b -> /dev/block/sde36
+/dev/block/bootdevice/by-name/ddr -> /dev/block/sdd3
+/dev/block/bootdevice/by-name/devcfg_a -> /dev/block/sde10
+/dev/block/bootdevice/by-name/devcfg_b -> /dev/block/sde30
+/dev/block/bootdevice/by-name/devinfo -> /dev/block/sde39
+/dev/block/bootdevice/by-name/dinfo -> /dev/block/sdd7
+/dev/block/bootdevice/by-name/dsp_a -> /dev/block/sde7
+/dev/block/bootdevice/by-name/dsp_b -> /dev/block/sde27
+/dev/block/bootdevice/by-name/dtbo_a -> /dev/block/sde13
+/dev/block/bootdevice/by-name/dtbo_b -> /dev/block/sde33
+/dev/block/bootdevice/by-name/engineering_cdt_a -> /dev/block/sdd4
+/dev/block/bootdevice/by-name/engineering_cdt_b -> /dev/block/sdd5
+/dev/block/bootdevice/by-name/featenabler_a -> /dev/block/sde17
+/dev/block/bootdevice/by-name/featenabler_b -> /dev/block/sde18
+/dev/block/bootdevice/by-name/frp -> /dev/block/sda5
+/dev/block/bootdevice/by-name/fsc -> /dev/block/sdf14
+/dev/block/bootdevice/by-name/fsg -> /dev/block/sdf13
+/dev/block/bootdevice/by-name/hyp_a -> /dev/block/sde3
+/dev/block/bootdevice/by-name/hyp_b -> /dev/block/sde23
+/dev/block/bootdevice/by-name/imagefv_a -> /dev/block/sde14
+/dev/block/bootdevice/by-name/imagefv_b -> /dev/block/sde34
+/dev/block/bootdevice/by-name/kernel_log -> /dev/block/sde54
+/dev/block/bootdevice/by-name/keymaster_a -> /dev/block/sde8
+/dev/block/bootdevice/by-name/keymaster_b -> /dev/block/sde28
+/dev/block/bootdevice/by-name/keystore -> /dev/block/sda4
+/dev/block/bootdevice/by-name/logdump -> /dev/block/sde43
+/dev/block/bootdevice/by-name/logfs -> /dev/block/sde41
+/dev/block/bootdevice/by-name/logo_a -> /dev/block/sde20
+/dev/block/bootdevice/by-name/logo_b -> /dev/block/sde38
+/dev/block/bootdevice/by-name/metadata -> /dev/block/sda14
+/dev/block/bootdevice/by-name/misc -> /dev/block/sda3
+/dev/block/bootdevice/by-name/modem_a -> /dev/block/sde4
+/dev/block/bootdevice/by-name/modem_b -> /dev/block/sde24
+/dev/block/bootdevice/by-name/modemst1 -> /dev/block/sdf6
+/dev/block/bootdevice/by-name/modemst2 -> /dev/block/sdf7
+/dev/block/bootdevice/by-name/multiimgoem_a -> /dev/block/sde45
+/dev/block/bootdevice/by-name/multiimgoem_b -> /dev/block/sde46
+/dev/block/bootdevice/by-name/ocdt -> /dev/block/sdd6
+/dev/block/bootdevice/by-name/oplusdycnvbk -> /dev/block/sdf2
+/dev/block/bootdevice/by-name/opluslog -> /dev/block/sda7
+/dev/block/bootdevice/by-name/oplusreserve1 -> /dev/block/sdf8
+/dev/block/bootdevice/by-name/oplusreserve2 -> /dev/block/sdf9
+/dev/block/bootdevice/by-name/oplusreserve3 -> /dev/block/sdf10
+/dev/block/bootdevice/by-name/oplusreserve4 -> /dev/block/sdf11
+/dev/block/bootdevice/by-name/oplusreserve5 -> /dev/block/sdf12
+/dev/block/bootdevice/by-name/oplusstanvbk_a -> /dev/block/sdf3
+/dev/block/bootdevice/by-name/oplusstanvbk_b -> /dev/block/sdf4
+/dev/block/bootdevice/by-name/param -> /dev/block/sdf5
+/dev/block/bootdevice/by-name/persist -> /dev/block/sda2
+/dev/block/bootdevice/by-name/persist_bkp -> /dev/block/sda6
+/dev/block/bootdevice/by-name/qupfw_a -> /dev/block/sde11
+/dev/block/bootdevice/by-name/qupfw_b -> /dev/block/sde31
+/dev/block/bootdevice/by-name/rawdump -> /dev/block/sda15
+/dev/block/bootdevice/by-name/rpm_a -> /dev/block/sde1
+/dev/block/bootdevice/by-name/rpm_b -> /dev/block/sde21
+/dev/block/bootdevice/by-name/secdata -> /dev/block/sde48
+/dev/block/bootdevice/by-name/ssd -> /dev/block/sda1
+/dev/block/bootdevice/by-name/storsec -> /dev/block/sde44
+/dev/block/bootdevice/by-name/super -> /dev/block/sda9
+/dev/block/bootdevice/by-name/tz_a -> /dev/block/sde2
+/dev/block/bootdevice/by-name/tz_b -> /dev/block/sde22
+/dev/block/bootdevice/by-name/uefisecapp_a -> /dev/block/sde16
+/dev/block/bootdevice/by-name/uefisecapp_b -> /dev/block/sde35
+/dev/block/bootdevice/by-name/uefivarstore -> /dev/block/sde47
+/dev/block/bootdevice/by-name/userdata -> /dev/block/sda16
+/dev/block/bootdevice/by-name/vbmeta_a -> /dev/block/sde12
+/dev/block/bootdevice/by-name/vbmeta_b -> /dev/block/sde32
+/dev/block/bootdevice/by-name/vbmeta_system_a -> /dev/block/sda10
+/dev/block/bootdevice/by-name/vbmeta_system_b -> /dev/block/sda11
+/dev/block/bootdevice/by-name/vendor_boot_a -> /dev/block/sde19
+/dev/block/bootdevice/by-name/vendor_boot_b -> /dev/block/sde37
+/dev/block/bootdevice/by-name/vm-data -> /dev/block/sde52
+/dev/block/bootdevice/by-name/vm-keystore -> /dev/block/sde51
+/dev/block/bootdevice/by-name/vm-system_a -> /dev/block/sda12
+/dev/block/bootdevice/by-name/vm-system_b -> /dev/block/sda13
+/dev/block/bootdevice/by-name/xbl_a -> /dev/block/sdb1
+/dev/block/bootdevice/by-name/xbl_b -> /dev/block/sdc1
+/dev/block/bootdevice/by-name/xbl_config_a -> /dev/block/sdb2
+/dev/block/bootdevice/by-name/xbl_config_b -> /dev/block/sdc2
+
+OnePlusN200:/ $ mount
+/dev/block/dm-5 on /                                                        type ext4 (ro,seclabel,relatime,discard)
+tmpfs on /dev                                                               type tmpfs (rw,seclabel,nosuid,relatime,mode=755)
+devpts on /dev/pts                                                          type devpts (rw,seclabel,relatime,mode=600,ptmxmode=000)
+proc on /proc                                                               type proc (rw,relatime,gid=3009,hidepid=2)
+sysfs on /sys                                                               type sysfs (rw,seclabel,relatime)
+selinuxfs on /sys/fs/selinux                                                type selinuxfs (rw,relatime)
+tmpfs on /mnt                                                               type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=755,gid=1000)
+tmpfs on /mnt/installer                                                     type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=755,gid=1000)
+tmpfs on /mnt/androidwritable                                               type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=755,gid=1000)
+/dev/block/sda14 on /metadata                                               type ext4 (rw,seclabel,nosuid,nodev,noatime,discard)
+/dev/block/dm-6 on /system_ext                                              type ext4 (ro,seclabel,relatime,discard)
+/dev/block/dm-7 on /product                                                 type ext4 (ro,seclabel,relatime,discard)
+/dev/block/dm-8 on /vendor                                                  type ext4 (ro,seclabel,relatime,discard)
+/dev/block/dm-9 on /odm                                                     type ext4 (ro,seclabel,relatime,discard)
+overlay on /system/etc/buildinfo                                            type overlay (ro,context=u:object_r:system_file:s0,relatime,lowerdir=/odm/etc/buildinfo:/system/etc/buildinfo)
+tmpfs on /apex                                                              type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=755)
+tmpfs on /linkerconfig                                                      type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=755)
+none on /dev/blkio                                                          type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+none on /dev/cg2_bpf                                                        type cgroup2 (rw,nosuid,nodev,noexec,relatime)
+none on /dev/cpuctl                                                         type cgroup (rw,nosuid,nodev,noexec,relatime,cpu)
+none on /acct                                                               type cgroup (rw,nosuid,nodev,noexec,relatime,cpuacct)
+none on /dev/cpuset                                                         type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset,noprefix,release_agent=/sbin/cpuset_release_agent)
+none on /dev/freezer                                                        type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+none on /dev/memcg                                                          type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+tracefs on /sys/kernel/tracing                                              type tracefs (rw,seclabel,relatime)
+none on /config                                                             type configfs (rw,nosuid,nodev,noexec,relatime)
+binder on /dev/binderfs                                                     type binder (rw,relatime,max=1048576,stats=global)
+none on /sys/fs/fuse/connections                                            type fusectl (rw,relatime)
+none on /sys/fs/bpf                                                         type bpf (rw,nosuid,nodev,noexec,relatime)
+pstore on /sys/fs/pstore                                                    type pstore (rw,seclabel,nosuid,nodev,noexec,relatime)
+none on /dev/op_cgroup                                                      type tmpfs (rw,seclabel,relatime,mode=750,gid=1000)
+none on /dev/op_cgroup/freezer                                              type cgroup (rw,relatime,freezer)
+none on /dev/op_cgroup                                                      type tmpfs (rw,seclabel,relatime,mode=750,gid=1000)
+none on /dev/op_cgroup/freezer                                              type cgroup (rw,relatime,freezer)
+/dev/block/sda7 on /mnt/vendor/op2                                          type ext4 (rw,seclabel,nosuid,nodev,noatime,data=ordered)
+/dev/block/sda2 on /mnt/vendor/persist                                      type ext4 (rw,seclabel,nosuid,nodev,noatime)
+/dev/block/sde4 on /vendor/firmware_mnt                                     type vfat (ro,context=u:object_r:firmware_file:s0,relatime,uid=1000,gid=1000,fmask=0337,dmask=0227,codepage=437,iocharset=iso8859-1,shortname=lower,errors=remount-ro)
+/dev/block/sde7 on /vendor/dsp                                              type ext4 (ro,seclabel,nosuid,nodev,relatime)
+/dev/block/sde5 on /vendor/bt_firmware                                      type vfat (ro,context=u:object_r:bt_firmware_file:s0,relatime,uid=1002,gid=3002,fmask=0337,dmask=0227,codepage=437,iocharset=iso8859-1,shortname=lower,errors=remount-ro)
+/dev/block/dm-10 on /data                                                   type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+tmpfs on /linkerconfig                                                      type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=755)
+/dev/block/dm-11 on /apex/com.android.os.statsd@301800200                   type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/dm-11 on /apex/com.android.os.statsd                             type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/dm-10 on /data/user/0                                            type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+tmpfs on /data_mirror                                                       type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=700,gid=1000)
+/dev/block/dm-10 on /data_mirror/data_ce/null                               type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /data_mirror/data_ce/null/0                             type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /data_mirror/data_de/null                               type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /data_mirror/cur_profiles                               type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/loop7 on /apex/com.android.apex.cts.shim@1                       type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop7 on /apex/com.android.apex.cts.shim                         type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop8 on /apex/com.android.ipsec@301500700                       type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop8 on /apex/com.android.ipsec                                 type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop9 on /apex/com.android.mediaprovider@301501702               type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop9 on /apex/com.android.mediaprovider                         type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop10 on /apex/com.android.cellbroadcast@301501400              type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop10 on /apex/com.android.cellbroadcast                        type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop11 on /apex/com.android.adbd@301400200                       type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop11 on /apex/com.android.adbd                                 type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop12 on /apex/com.android.conscrypt@301300300                  type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop12 on /apex/com.android.conscrypt                            type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop13 on /apex/com.android.permission@301501400                 type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop13 on /apex/com.android.permission                           type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop14 on /apex/com.android.tethering@301400200                  type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop14 on /apex/com.android.tethering                            type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop15 on /apex/com.android.wifi@300208500                       type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop15 on /apex/com.android.wifi                                 type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop16 on /apex/com.android.art@1                                type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop16 on /apex/com.android.art                                  type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop17 on /apex/com.android.runtime@1                            type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop17 on /apex/com.android.runtime                              type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop18 on /apex/com.android.neuralnetworks@300901600             type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop18 on /apex/com.android.neuralnetworks                       type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop19 on /apex/com.android.vndk.v30@1                           type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop19 on /apex/com.android.vndk.v30                             type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop20 on /apex/com.android.extservices@301500700                type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop20 on /apex/com.android.extservices                          type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop21 on /apex/com.android.media.swcodec@301600000              type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop21 on /apex/com.android.media.swcodec                        type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop22 on /apex/com.android.resolv@301500700                     type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop22 on /apex/com.android.resolv                               type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop23 on /apex/com.android.tzdata@301500700                     type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop23 on /apex/com.android.tzdata                               type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop24 on /apex/com.android.media@301500800                      type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop24 on /apex/com.android.media                                type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop25 on /apex/com.android.sdkext@300901600                     type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop25 on /apex/com.android.sdkext                               type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop26 on /apex/com.android.i18n@1                               type ext4 (ro,dirsync,seclabel,nodev,noatime)
+/dev/block/loop26 on /apex/com.android.i18n                                 type ext4 (ro,dirsync,seclabel,nodev,noatime)
+tmpfs on /storage                                                           type tmpfs (rw,seclabel,nosuid,nodev,noexec,relatime,mode=755,gid=1000)
+adb on /dev/usb-ffs/adb                                                     type functionfs (rw,relatime)
+diag on /dev/ffs-diag                                                       type functionfs (rw,relatime)
+diag_mdm on /dev/ffs-diag-1                                                 type functionfs (rw,relatime)
+diag_mdm2 on /dev/ffs-diag-2                                                type functionfs (rw,relatime)
+mtp on /dev/usb-ffs/mtp                                                     type functionfs (rw,relatime)
+ptp on /dev/usb-ffs/ptp                                                     type functionfs (rw,relatime)
+/dev/fuse on /storage/emulated                                              type fuse (rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other)
+/dev/fuse on /mnt/installer/0/emulated                                      type fuse (rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other)
+/dev/fuse on /mnt/androidwritable/0/emulated                                type fuse (rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other)
+/dev/fuse on /mnt/user/0/emulated                                           type fuse (rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other)
+/dev/block/dm-10 on /mnt/pass_through/0/emulated                            type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /mnt/androidwritable/0/emulated/0/Android/data          type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /mnt/installer/0/emulated/0/Android/data                type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /storage/emulated/0/Android/data                        type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /mnt/user/0/emulated/0/Android/data                     type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /mnt/androidwritable/0/emulated/0/Android/obb           type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /mnt/installer/0/emulated/0/Android/obb                 type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /storage/emulated/0/Android/obb                         type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)
+/dev/block/dm-10 on /mnt/user/0/emulated/0/Android/obb                      type f2fs (rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,extent_cache,mode=adaptive,active_logs=6,reserve_root=25930,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,fsync_mode=nobarrier)

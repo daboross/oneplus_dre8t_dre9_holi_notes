@@ -1,6 +1,11 @@
 Trying to port TWRP
 ===================
 
+## Notes:
+
+- TWRP doesn't currently support weird extra partitions. See
+  https://gerrit.twrp.me/c/android_bootable_recovery/+/3009/1 for an active PR
+  for this.
 
 ### 2021-08-01:
 
@@ -226,3 +231,70 @@ be true for devices with dynamic partitions.
 ```
 
 Giving up for now.
+
+---
+
+One more idea! It sounded a lot like I'm missing the kernel. Which would make
+sense because I removed the line to include the prebuilt image.
+
+Building with the prebuitl image - it all succeeds! But... it does not produce a
+recovery.img file. A recovery folder, yes, but no .img per these instructions.
+
+I wonder if there's a difference in what I need to execute, or if it's just
+missing? not sure.
+
+In any case there is an additional error which seems useful:
+
+
+```
+[ 99% 282/283] finishing build rules ...
+vendor/twrp/build/tasks/kernel.mk:122: warning:
+***************************************************************
+vendor/twrp/build/tasks/kernel.mk:123: warning: * Using prebuilt kernel binary
+instead of source              *
+vendor/twrp/build/tasks/kernel.mk:124: warning: * THIS IS DEPRECATED, AND IS NOT
+ADVISED.                     *
+vendor/twrp/build/tasks/kernel.mk:125: warning: * Please configure your device
+to download the kernel         *
+vendor/twrp/build/tasks/kernel.mk:126: warning: * source repository to
+vendor/twrp/build/tasks/kernel.mk:127: warning: * for more information
+                             *
+                             vendor/twrp/build/tasks/kernel.mk:128: warning:
+***************************************************************
+[100% 11642/11642] Install:
+out/target/product/holi/recovery/root/system/bin/recovery
+```
+
+So, it would seem we aren't supposed to include a prebuilt binary anymore.
+
+
+I wonder if there are any twrp-11 manifest repos I could steal off of...
+
+OK.
+
+Giving up again now, since it *just works* except there is no recovery.img
+
+I'm going to try with a regular twrp omni-9.0 build next.
+
+2021-08-03:
+
+Got advice! I was doing a few things wrong:
+
+A) `BOARD_USES_RECOVERY_AS_BOOT` was set, which means it generates boot.img
+   instead of recovery.img
+B) I should use a more up to date repo. Instead of
+   https://github.com/TeamWin/android_device_oneplus_fajita, I'm now using
+   https://github.com/theincognito-inc/android_device_oneplus_kebab.
+
+Not taking a ton of notes on this new process. just porting changes. will try to
+compile in a bit.
+
+Notes:
+- `AB_OTA_PARTITIONS` contains a few partitions - vendor, system, system_ext,
+vbmeta, which don't seem to be a/b on my device.
+
+Took log "2021-08-03-twrp-build-attempt-2". No success, still, but I might be
+getting closer? I'm at least learning more.
+
+
+

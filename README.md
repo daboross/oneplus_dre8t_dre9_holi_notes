@@ -39,12 +39,10 @@ OnePlus Nord N200 5G Notes
 ### Useful XDA posts
 
 - https://forum.xda-developers.com/t/psa-do-not-use-the-dsu-loader-on-the-n200-you-will-brick.4321623/#post-85502909
+- https://forum.xda-developers.com/t/the-quest-for-a-bootloader-unlock-partial-guide-t-mobile-variant-only.4313525/
+- https://forum.xda-developers.com/t/bootloader-unlock-devices-bought-directly-from-usa-oneplus-store.4313753/
 - https://forum.xda-developers.com/t/full-rom-dump-of-t-mobile-variant-guide-on-gaining-root-access-without-magisk.4321559/
-- dre8t bootloader unlock:
-  https://forum.xda-developers.com/t/the-quest-for-a-bootloader-unlock-partial-guide-t-mobile-variant-only.4313525/
-- dre9 bootloader unlock:
-  https://forum.xda-developers.com/t/bootloader-unlock-devices-bought-directly-from-usa-oneplus-store.4313753/
-
+- https://forum.xda-developers.com/t/rooting-stock-firmware-w-magisk.4321575/#post-85503115
 
 ## Contributing
 

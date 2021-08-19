@@ -3,9 +3,20 @@ Trying to port TWRP
 
 ## Notes:
 
-- TWRP doesn't currently support weird extra partitions. See
-  https://gerrit.twrp.me/c/android_bootable_recovery/+/3009/1 for an active PR
-  for this.
+TWRP doesn't currently support weird extra partitions. See
+https://gerrit.twrp.me/c/android_bootable_recovery/+/3009/1 for an active PR
+for this.
+
+The current build uses https://github.com/AOSPA/android_kernel_oneplus_sm8250.
+However, the download from
+https://github.com/OnePlusOSS/OpenSourceReleases/wiki/OnePlus-Nord-N200 should
+include Linux kernel sources as Linux is GPL! So we should be able to compile
+our own kernel.
+
+So - some ideas on kernel source - the SM4350 hardware platform is shared
+between other phones. Can we get a ROM dump of another one easier?
+
+Idea - Nokia X20. Going to create a new folder for this.
 
 ### 2021-08-01:
 
@@ -297,4 +308,12 @@ Took log "2021-08-03-twrp-build-attempt-2". No success, still, but I might be
 getting closer? I'm at least learning more.
 
 
+2021-08-18:
 
+Lots more unsuccessful attempts! Getting a lot of help from the TWRP zulip.
+Critically, the compiler sources have been released, and so I'm working on
+getting those compiled
+
+Useful guides:
+- https://github.com/nathanchance/android-kernel-clang
+- https://forum.xda-developers.com/t/reference-how-to-compile-an-android-kernel.3627297/
